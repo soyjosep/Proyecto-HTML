@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pon un violin en tu vida</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Con el CuorEvents</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preferencias.html">Preferencias</a></li>
+                <li><a class="active" href="audiovisuales.html">Audiovisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="centrado">
+        <video src="/assets/video/video1.mp4" autoplay muted height="600px"></video>
+    </div>
+
+    <div class="centrado">
+        <audio src="/assets/audio/audio.mp3" autoplay controls></audio>
+    </div>
+
+    <section class="centrado">
+        <div class="gallery">
+            <a href="/assets/img/violin4.webp" target="_blank"><img src="/assets/img/violin4.webp" alt="img violin" width="600px"></a>
+            <div class="desc">De pequeña</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/violin.jpg" target="_blank"><img src="/assets/img/violin.jpg" alt="img violin2" width="600px"></a>
+            <div class="desc">De adulta</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/violin5.webp" target="_blank"><img src="/assets/img/violin5.webp" alt="img violin3" width="600px"></a>
+            <div class="desc">Stradivarius</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Derechos reservados &copy;2024</p>
+    </footer>
+</body>
+
+</html>
